@@ -7,4 +7,3 @@ public interface IArea {
 	public Dimension Getdimension() ;
 	public Image getImage() ;
 }
-
