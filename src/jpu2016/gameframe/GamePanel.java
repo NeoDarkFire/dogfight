@@ -18,7 +18,7 @@ public class GamePanel extends JPanel implements Observer{
 	}
 	
 	public void paintComponent(Graphics graphic) {
-		
+	
 	}
 
 	@Override
