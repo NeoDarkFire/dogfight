@@ -1,21 +1,21 @@
 package jpu2016.dogfight.model;
 
-import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.Observable;
 
 
 public class DogfightModel extends Observable implements IDogfightModel {
 	private Sky sky ;
+	private ArrayList <IMobile> mobiles ;
 	
 	
 	public DogfightModel() {
-		// TODO Auto-generated constructor stub
+		this.mobiles = new ArrayList <IMobile> () ;
+		this.sky = new Sky (new Dimension (100,100)) ;
 	}
 	
 	@Override
 	public IArea getArea() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
