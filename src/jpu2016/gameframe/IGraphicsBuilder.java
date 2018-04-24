@@ -11,4 +11,5 @@ public interface IGraphicsBuilder {
 	
 	public int getGlobalHeight();
 	
+	
 }
