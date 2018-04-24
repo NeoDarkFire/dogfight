@@ -4,7 +4,8 @@ import java.awt.Dimension;
 import java.util.ArrayList;
 
 
-public interface IDogFightmodel {
+
+public interface IDogfightModel {
 	public IArea getArea ();
 	public void buildArea(Dimension dimension ) ;
 	public void addmobile ( IMobile mobile ) ;

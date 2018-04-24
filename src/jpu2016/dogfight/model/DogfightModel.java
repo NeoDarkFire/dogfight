@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Observable;
 
 
-public class DogfightModel extends Observable implements IDogFightmodel {
+public class DogfightModel extends Observable implements IDogfightModel {
 
 	@Override
 	public IArea getArea() {
