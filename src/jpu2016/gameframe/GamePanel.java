@@ -15,6 +15,8 @@ public class GamePanel extends JPanel implements Observer {
 		// TODO
 		super();
 		this.graphicsBuilder = graphicsBuilder;
+		this.observable = new Observable();
+		this.observable.addObserver(this);
 	}
 	
 	public void paintComponent(Graphics graphic) {
