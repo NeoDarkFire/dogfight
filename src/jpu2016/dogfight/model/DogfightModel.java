@@ -6,7 +6,13 @@ import java.util.Observable;
 
 
 public class DogfightModel extends Observable implements IDogfightModel {
-
+	private Sky sky ;
+	
+	
+	public DogfightModel() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	@Override
 	public IArea getArea() {
 		// TODO Auto-generated method stub
@@ -20,7 +26,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	}
 
 	@Override
-	public void addmobile(IMobile mobile) {
+	public void addMobile(IMobile mobile) {
 		// TODO Auto-generated method stub
 
 	}

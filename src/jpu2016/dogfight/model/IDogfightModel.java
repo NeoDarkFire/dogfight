@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public interface IDogfightModel {
 	public IArea getArea ();
 	public void buildArea(Dimension dimension ) ;
-	public void addmobile ( IMobile mobile ) ;
+	public void addMobile ( IMobile mobile ) ;
 	public void removeMobile ( IMobile mobile ) ;
 	public ArrayList<IMobile> getMobile() ;
 	public IMobile getMobileByPlayer (int player);
