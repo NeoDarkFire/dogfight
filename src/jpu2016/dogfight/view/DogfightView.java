@@ -33,5 +33,5 @@ public class DogfightView implements IViewSystem, Runnable{
 		// TODO Auto-generated method stub
 		
 	}
-	
+
 }

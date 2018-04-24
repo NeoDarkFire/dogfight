@@ -20,7 +20,7 @@ public class GamePanel extends JPanel implements Observer{
 	public void paintComponent(Graphics graphic) {
 	
 	}
-
+	
 	@Override
 	public void update(Observable observable, Object arg) {
 		// TODO Auto-generated method stub

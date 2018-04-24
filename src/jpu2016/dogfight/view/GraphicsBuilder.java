@@ -35,7 +35,7 @@ public class GraphicsBuilder implements IGraphicsBuilder{
 	public int getGlobalWidth() {
 		return 1;
 	}
-
+	
 	public int getGlobalHeight() {
 		return 1;
 	}

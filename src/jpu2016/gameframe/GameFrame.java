@@ -22,7 +22,7 @@ public class GameFrame extends JFrame implements KeyListener{
 	public void keyReleased(KeyEvent keyEvent) {
 		
 	}
-	
+
 	public void keyTyped(KeyEvent keyEvent) {
 		
 	}
