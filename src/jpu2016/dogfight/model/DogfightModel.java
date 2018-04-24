@@ -8,44 +8,40 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	private Sky sky ;
 	private ArrayList <IMobile> mobiles ;
 	
-	
 	public DogfightModel() {
-		this.mobiles = new ArrayList <IMobile> () ;
-		this.sky = new Sky (new Dimension (100,100)) ;
+		this.mobiles = new ArrayList<IMobile>();
 	}
 	
 	@Override
 	public IArea getArea() {
-		return null;
+		return (IArea) this.sky;
 	}
 
 	@Override
 	public void buildArea(Dimension dimension) {
-		// TODO Auto-generated method stub
-
+		this.sky = new Sky (dimension);
 	}
 
 	@Override
 	public void addMobile(IMobile mobile) {
-		// TODO Auto-generated method stub
-
+		this.getMobiles().add(mobile);
 	}
 
 	@Override
 	public void removeMobile(IMobile mobile) {
-		// TODO Auto-generated method stub
-
+		this.getMobiles().remove(mobile);
 	}
 
 	@Override
-	public ArrayList<IMobile> getMobile() {
-		// TODO Auto-generated method stub
-		return null;
+	public ArrayList<IMobile> getMobiles() {
+		return this.mobiles;
 	}
 
 	@Override
 	public IMobile getMobileByPlayer(int player) {
-		// TODO Auto-generated method stub
+		for (final IMobile mobile : this.getMobiles()) {
+			if (mobile.isPlayer(player)) { return mobile; }
+		}
 		return null;
 	}
 

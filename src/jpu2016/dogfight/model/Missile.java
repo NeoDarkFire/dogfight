@@ -1,7 +1,5 @@
 package jpu2016.dogfight.model;
 
-import jpu2016.dogfight.Mobile;
-
 public class Missile extends Mobile {
 
 	static private final int SPEED = 4;
@@ -10,25 +8,26 @@ public class Missile extends Mobile {
 	static private final int MAX_DISTANCE_TRAVELED = 1400;
 	static private final String IMAGE = "missile";
 	
-	private int distanceTraveled = 0;
+	private int distanceTraveled;
 	
-	public Missile(Direction direction, Dimension dimension) {
-		// TODO
+	public Missile(Direction direction, Position position) {
+		super(direction, position, new Dimension(WIDTH, HEIGHT), SPEED, IMAGE);
+		this.distanceTraveled = 0;
 	}
 	
 	public static int getWidthWithADirection(Direction direction) {
 		if (direction == Direction.UP || direction == Direction.DOWN) {
-			return this.getDimension().getWidth();
+			return WIDTH;
 		} else {
-			return this.getDimension().getHeight();
+			return HEIGHT;
 		}
 	}
 	
 	public static int getHeightWithADirection(Direction direction) {
 		if (direction == Direction.UP || direction == Direction.DOWN) {
-			return this.getDimension().getHeight();
+			return HEIGHT;
 		} else {
-			return this.getDimension().getWidth();
+			return WIDTH;
 		}
 	}
 	
@@ -37,7 +36,7 @@ public class Missile extends Mobile {
 		super.move();
 		this.distanceTraveled += this.getSpeed();
 		if (this.distanceTraveled > MAX_DISTANCE_TRAVELED) {
-			this.getDogfightModel().removeMobile(this);
+			this.getDogfightModel().removeMobile((IMobile) this);
 		}
 	}
 	
