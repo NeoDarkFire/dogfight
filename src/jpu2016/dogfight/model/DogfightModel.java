@@ -4,7 +4,6 @@ import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.Observable;
 
-
 public class DogfightModel extends Observable implements IDogFightmodel {
 
 	@Override
