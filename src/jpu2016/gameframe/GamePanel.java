@@ -6,15 +6,15 @@ import java.util.Observer;
 
 import javax.swing.JPanel;
 
-public class GamePanel extends JPanel implements Observer{
+public class GamePanel extends JPanel implements Observer {
 
 	private Observable observable;
-	
 	private IGraphicsBuilder graphicsBuilder;
 	
-	public GamePanel(IGraphicsBuilder graphicBuilder) {
-		// TODO Auto-generated constructor stub
-		this.graphicsBuilder = graphicBuilder;
+	public GamePanel(IGraphicsBuilder graphicsBuilder) {
+		// TODO
+		super();
+		this.graphicsBuilder = graphicsBuilder;
 	}
 	
 	public void paintComponent(Graphics graphic) {
