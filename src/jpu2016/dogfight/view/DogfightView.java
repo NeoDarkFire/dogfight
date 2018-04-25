@@ -9,15 +9,12 @@ import jpu2016.gameframe.GameFrame;
 public class DogfightView implements IViewSystem, Runnable{
 	
 	private EventPerformer eventPerformer;
-	
 	private GraphicsBuilder graphicsBuilder;
-	
 	private GameFrame gameFrame;
 
 	public DogfightView(IOrderPerformer orderPerformer, IDogfightModel dogfightModel, Observable observable) {
 		// TODO Auto-generated constructor stub
-		
-		
+		this.eventPerformer = (EventPerformer) orderPerformer;
 	}
 	
 	public void displayMessage(String message) {

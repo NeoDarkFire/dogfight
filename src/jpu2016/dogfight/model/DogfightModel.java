@@ -19,7 +19,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	@Override
 	public void buildArea(Dimension dimension) {
-		this.sky = new Sky (dimension);
+		this.sky = new Sky(dimension);
 	}
 
 	@Override

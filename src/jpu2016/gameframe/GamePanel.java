@@ -8,19 +8,19 @@ import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements Observer {
 
-	private Observable observable;
+//	private Observable observable;
 	private IGraphicsBuilder graphicsBuilder;
 	
 	public GamePanel(IGraphicsBuilder graphicsBuilder) {
 		// TODO
 		super();
 		this.graphicsBuilder = graphicsBuilder;
-		this.observable = new Observable();
-		this.observable.addObserver(this);
+//		this.observable = new Observable();
+//		this.observable.addObserver(this);
 	}
 	
 	public void paintComponent(Graphics graphic) {
-	
+		
 	}
 	
 	@Override
