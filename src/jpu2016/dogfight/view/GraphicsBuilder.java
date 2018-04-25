@@ -32,10 +32,10 @@ public class GraphicsBuilder implements IGraphicsBuilder{
 	}
 	
 	public int getGlobalWidth() {
-		return 1;
+		return this.dogfightModel.getArea().Getdimension().getWidth();
 	}
 	
 	public int getGlobalHeight() {
-		return 1;
+		return this.dogfightModel.getArea().Getdimension().getHeight();
 	}
 }
